@@ -63,6 +63,53 @@ export default (() => {
 				<Icon category="md" margin="0 auto" icon={MdArrowDownward} />
 			</Box>
 		</Section>
+		<Section
+			padding="60px 0"
+			sm-padding="40px 0"
+			background="--color-light"
+			display="flex"
+			flex-direction="column"
+		>
+			<Stack color="--grey" font="--base">
+				<StackItem width="25%" md-width="50%" sm-width="100%" color="--greyD1">
+					<Override slot="StackItemContent" />
+					<Text margin="0px" font="--headline2" md-font="--headline2" color="--primary">
+						Почему Divly?
+					</Text>
+				</StackItem>
+				<StackItem width="25%" md-width="50%" sm-width="100%">
+					<Text margin="0px" font="300 20px/24px -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif">
+						Более{" "}
+						<Strong>
+							13 лет опыта
+						</Strong>
+						{" "}в разработке решений от бюджетных до крупных проектов и нестандартных решений.{" "}
+					</Text>
+				</StackItem>
+				<StackItem width="25%" md-width="50%" sm-width="100%">
+					<Text margin="0px" font="300 20px/24px -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif">
+						Собственные продукты и база наработок,{" "}
+						<Strong>
+							готовый стек технологий
+						</Strong>
+						{" "}для быстрой и качественной разработки
+					</Text>
+				</StackItem>
+				<StackItem width="25%" md-width="50%" sm-width="100%">
+					<Text margin="0px" font="300 20px/24px -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif">
+						Уверенная{" "}
+						<Strong>
+							поэтапная разработка
+						</Strong>
+						{" "}с утверждением каждого этапа,{" "}
+						<Strong>
+							поэтапная оплата
+						</Strong>
+						{" "}и персональный менеджер на всех этапах разработки
+					</Text>
+				</StackItem>
+			</Stack>
+		</Section>
 		<Section padding="140px 0" sm-padding="40px 0" background="radial-gradient(at center,rgba(0,0,0,0) 39%,rgba(0,0,0,1) 100%),url(https://images.unsplash.com/photo-1588767904389-0dd859d11a2b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) center/cover">
 			<Box
 				max-width="450px"
