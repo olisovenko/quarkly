@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Strong, Text, Icon, Box, Section, Button, Image, Input } from "@quarkly/widgets";
+import { Theme, Link, Strong, Text, Icon, Box, Section, Button, Image, Input, Span } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, StackItem, Stack, Formspree } from "@quarkly/components";
@@ -111,13 +111,7 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section padding="140px 0" sm-padding="40px 0" background="radial-gradient(at center,rgba(0,0,0,0) 39%,rgba(0,0,0,1) 100%),url(https://images.unsplash.com/photo-1588767904389-0dd859d11a2b?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) center/cover">
-			<Box
-				max-width="450px"
-				padding="50px 50px 80px 50px"
-				background="--color-light"
-				color="--dark"
-				width="450px"
-			>
+			<Box padding="50px 50px 50px 50px" background="--color-light" color="--dark" width="400px">
 				<Text
 					as="h4"
 					font="--base"
@@ -168,7 +162,17 @@ export default (() => {
 					</Strong>
 					{" "}Обсудим сроки, этапы и стоимость разработки
 					<br />
-					Приступим к разработке поэтапно
+					<Strong
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+					>
+						4.
+					</Strong>
+					{" "}Приступим к разработке поэтапно
 				</Text>
 			</Box>
 		</Section>
@@ -196,7 +200,7 @@ export default (() => {
 						background="--color-primary"
 						border-color="#909090"
 						border-width="2px"
-						border-radius="16px"
+						border-radius={0}
 						height="50px"
 						width="100% border-box"
 						font="normal 300 20px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
@@ -220,7 +224,7 @@ export default (() => {
 						background="--color-primary"
 						border-color="#909090"
 						border-width="2px"
-						border-radius="16px"
+						border-radius={0}
 						height="50px"
 						width="100% border-box"
 						font="normal 300 20px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
@@ -244,7 +248,7 @@ export default (() => {
 						background="--color-primary"
 						border-color="#909090"
 						border-width="2px"
-						border-radius="16px"
+						border-radius={0}
 						height="50px"
 						width="100% border-box"
 						font="normal 300 20px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
@@ -268,7 +272,7 @@ export default (() => {
 						background="--color-primary"
 						border-color="#909090"
 						border-width="2px"
-						border-radius="16px"
+						border-radius={0}
 						height="50px"
 						width="100% border-box"
 						font="normal 300 20px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
@@ -309,7 +313,7 @@ export default (() => {
 			padding="100px 0"
 			sm-padding="40px 0"
 			position="relative"
-			background="linear-gradient(0deg,rgba(25, 30, 34, 0.8) 0%,rgba(25, 30, 34, 0.8) 100%),--color-darkL2 url(https://images.unsplash.com/photo-1547619292-240402b5ae5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80)"
+			background="linear-gradient(0deg,rgba(25, 30, 34, 0.8) 0%,rgba(25, 30, 34, 0.8) 100%),--color-darkL2 url(https://uploads.quarkly.io/60bf6c4a436263001e1ed3ed/images/nathan-riley-9q3I8XhesQI-unsplash.jpg?v=2021-06-08T16:08:39.679Z)"
 		>
 			<Stack>
 				<StackItem width="50%" md-width="100%">
@@ -423,15 +427,9 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section background-color="--dark" text-align="center" padding="32px 0">
-			<Link
-				href="mailto:hello@company.com"
-				text-decoration-line="none"
-				variant="--base"
-				color="--grey"
-				hover-color="--primary"
-			>
+			<Span text-decoration-line="none" variant="--base" color="--grey" hover-color="--primary">
 				Divly Creative Studio
-			</Link>
+			</Span>
 		</Section>
 		<Link
 			font={"--capture"}
